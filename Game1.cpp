@@ -176,7 +176,7 @@ void Input()
 	}
 }
 
-void Logic()
+void Logic() //фунукция отвечающая за логику поведения Пакмена. Логика основана на данных введённных с клавиатуры с помощью функции Input
 {
 	int lastX = PacMan.x, lastY = PacMan.y;
 	bool change_pos = false;
@@ -273,7 +273,7 @@ vector<char> patrol_route2 = { 'R', 'R', 'U', 'U', 'U', 'U', 'R', 'R', 'R', 'U',
 vector<char> patrol_route3 = { 'L', 'L', 'D', 'D', 'D', 'D', 'L', 'L', 'L', 'D', 'D', 'R', 'D', 'D', 'L', 'D', 'D', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'U', 'U', 'R', 'R', 'U', 'U', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'U', 'U', 'R', 'R', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R', 'U', 'U', 'U', 'U', 'L', 'L', 'L', 'L', 'L', 'L', 'D', 'D' };
 vector<char> patrol_route4 = { 'R', 'R', 'D', 'D', 'D', 'D', 'R', 'R', 'R', 'D', 'D', 'L', 'D', 'D', 'R', 'D', 'D', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'L', 'U', 'U', 'L', 'L', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'U', 'U', 'L', 'L', 'U', 'U', 'L', 'L', 'L', 'L', 'L', 'L', 'U', 'U', 'U', 'U', 'R', 'R', 'R', 'R', 'R', 'R', 'D', 'D' };
 
-void patrol(vector<char> patrol_route, int step, int g)
+void patrol(vector<char> patrol_route, int step, int g) // функция отвечающая за поведение призраков. Их маршрут записан выше
 {
 	int lastX = Ghosts[g].x, lastY = Ghosts[g].y;
 	bool change_pos = false;
