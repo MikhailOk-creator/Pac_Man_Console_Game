@@ -15,7 +15,7 @@ int Records()
 	fstream fs;
 	fs.open(path, fstream::in | fstream::out);
 	string msg;
-	while (!fs.eof())
+	while (!fs.eof()) // Изначально все рекорды храняться в соотвтствующам текстовом файле. Данный cpp файл может читать и редактировать исходный файл
 	{
 		msg = "";
 		fs >> msg;
