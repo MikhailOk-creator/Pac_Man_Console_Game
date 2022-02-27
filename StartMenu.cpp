@@ -23,7 +23,7 @@ vector<vector<char>> logo = {
 	{' ', char(219), ' ', ' ', ' ', ' ', char(219), ' ', ' ', char(219), ' ', char(219), ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', char(219), ' ', ' ', ' ', char(219), ' ', char(219), ' ', ' ', char(219), ' ', char(219), ' ', ' ', ' ', char(219), ' '},
 	{' ', char(219), ' ', ' ', ' ', ' ', char(219), ' ', ' ', char(219), ' ', ' ', char(219), char(219), char(219), ' ', ' ', ' ', ' ', ' ', ' ', ' ', char(219), ' ', ' ', ' ', char(219), ' ', char(219), ' ', ' ', char(219), ' ', char(219), ' ', ' ', ' ', char(219), ' '},
 	{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '}
-};
+}; // логотип игры
 
 int main()
 {
@@ -49,7 +49,7 @@ int main()
 			}
 			cout << endl;
 		}
-		SetConsoleTextAttribute(hConsole, (WORD)((Black << 4) | White));
+		SetConsoleTextAttribute(hConsole, (WORD)((Black << 4) | White)); // Главное меню игры
 		cout << endl << "Use your keyboard to control all the game menus:" << endl << "1) Start" << endl << "2) Records" << endl;
 		bool play_again = true;
 		if (_kbhit)
